@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Projeto 5 - Venda</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+<header>
+	<div class="container">
+		<div class="logo">
+			<img src="{{ url_for('static', filename='images/logo.jpg') }}">
+		</div>
+
+	<nav class="desktop">
+		<ul>
+			<li><a href="{{ url_for('home') }}">Home</a></li>
+			<li><a style="color: #EB2D2D;" href="{{ url_for('venda') }}">Venda</a></li>
+			<li><a href="{{ url_for('sobre') }}">Sobre</a></li>
+			<li><a class="contato" goto="contato" href="{{ url_for('home') }}">Contato</a></li>
+		</ul>		
+	</nav>
+
+	<nav class="mobile">
+		<ul>
+			<li><a href="{{ url_for('home') }}">Home</a></li>
+			<li><a style="color: #EB2D2D;" href="{{ url_for('venda') }}">Venda</a></li>
+			<li><a href="{{ url_for('sobre') }}">Sobre</a></li>
+			<li><a class="contato" goto="contato" href="{{ url_for('home') }}">Contato</a></li>
+		</ul>		
+	</nav>
+	<div class="clear"></div>
+	</div>
+</header>
+
+<section class="venda">
+	<div class="line-titulo">
+		<div class="ln1"></div>
+		<h2>Venda</h2>
+	</div>
+
+	<div class="content-venda">
+		<div class="container">
+		<div class="sidebar">
+			<div class="search1">
+				<h2>Filtre por preço</h2>
+				<div class="barra-preco">
+					<div class="barra-preco-fill"></div>
+					<div class="pointer-barra"></div>
+				</div>
+				<div class="valor-pesquisa">
+					<p class="preco_pesquisa">R$0,00</p>
+					<p>R$70.000,00</p>
+					<div class="clear"></div>
+				</div>
+			</div>
+
+			<div class="search2">
+				<h2>Filtre por ano</h2>
+				<form>
+					<div class="form-venda-wrapper">
+						<input type="checkbox" id="item1">
+						<label for="item1">
+							<div class="circle"></div>
+						</label>
+						<span>Todas as décadas</span>
+					</div>
+
+					<div class="form-venda-wrapper">
+						<input type="checkbox" id="item2">
+						<label for="item2">
+							<div class="circle"></div>
+						</label>
+						<span>1960 - 1970</span>
+					</div>
+
+					<div class="form-venda-wrapper">
+						<input type="checkbox" id="item3">
+						<label for="item3">
+							<div class="circle"></div>
+						</label>
+						<span>1971 - 1980</span>
+					</div>
+
+					<div class="form-venda-wrapper">
+						<input type="checkbox" id="item4">
+						<label for="item4">
+							<div class="circle"></div>
+						</label>
+						<span>1981 - 1990</span>
+					</div>
+
+					<div class="form-venda-wrapper">
+						<input type="checkbox" id="item5">
+						<label for="item5">
+							<div class="circle"></div>
+						</label>
+						<span>1991 - atualmente</span>
+					</div>
+				</form>
+			</div>
+		</div>
+
+		<div class="vitrine-venda">
+				
+			<div class="vitrine-destaque">
+				<div style="background-image: url('../static/images/carro1.jpg');" class="carro-img"></div>
+				<div class="info-carro">
+					<h2>Volkswagen Karmann-ghia</h2>
+					<p>1.6 8v, Gasolina, 2P, Manual 1969</p>
+					<a class="btn1" href="{{ url_for('carro') }}">Mais Detalhes</a>
+				</div>
+			</div>
+
+			<div class="vitrine-destaque">
+				<div style="background-image: url('../static/images/carro1.jpg');" class="carro-img"></div>
+				<div class="info-carro">
+					<h2>Volkswagen Karmann-ghia</h2>
+					<p>1.6 8v, Gasolina, 2P, Manual 1969</p>
+					<a class="btn1" href="{{ url_for('carro') }}">Mais Detalhes</a>
+				</div>
+			</div>
+
+			<div class="vitrine-destaque">
+				<div style="background-image: url('../static/images/carro1.jpg');" class="carro-img"></div>
+				<div class="info-carro">
+					<h2>Volkswagen Karmann-ghia</h2>
+					<p>1.6 8v, Gasolina, 2P, Manual 1969</p>
+					<a class="btn1" href="{{ url_for('carro') }}">Mais Detalhes</a>
+				</div>
+			</div>
+
+			<div class="vitrine-destaque">
+				<div style="background-image: url('../static/images/carro1.jpg');" class="carro-img"></div>
+				<div class="info-carro">
+					<h2>Volkswagen Karmann-ghia</h2>
+					<p>1.6 8v, Gasolina, 2P, Manual 1969</p>
+					<a class="btn1" href="{{ url_for('carro') }}">Mais Detalhes</a>
+				</div>
+			</div>
+
+			<div class="vitrine-destaque">
+				<div style="background-image: url('../static/images/carro1.jpg');" class="carro-img"></div>
+				<div class="info-carro">
+					<h2>Volkswagen Karmann-ghia</h2>
+					<p>1.6 8v, Gasolina, 2P, Manual 1969</p>
+					<a class="btn1" href="{{ url_for('carro') }}">Mais Detalhes</a>
+				</div>
+			</div>
+
+			<div class="vitrine-destaque">
+				<div style="background-image: url('../static/images/carro1.jpg');" class="carro-img"></div>
+				<div class="info-carro">
+					<h2>Volkswagen Karmann-ghia</h2>
+					<p>1.6 8v, Gasolina, 2P, Manual 1969</p>
+					<a class="btn1" href="{{ url_for('carro') }}">Mais Detalhes</a>
+				</div>
+			</div>
+		</div>
+
+			<div class="clear"></div>
+		</div>
+		</div>
+	</div>
+
+	<div class="clear"></div>
+</section>
+
+<footer>
+	<div class="container">
+		<nav>
+			<ul>
+				<li><a href="{{ url_for('home') }}">Home</a></li>
+				<li><a style="color: #EB2D2D;" href="{{ url_for('venda') }}">Venda</a></li>
+				<li><a href="{{ url_for('sobre') }}">Sobre</a></li>
+				<li><a class="contato" goto="contato" href="{{ url_for('home') }}">Contato</a></li>
+			</ul>
+		</nav>
+		<p>Todos os direitos reservados | 2022</p>
+	</div>
+	<div class="clear"></div>
+</footer>
+
+<script type="text/javascript" src="{{ url_for('static', filename='js/jquery.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='js/functions.js') }}"></script>
+</body>
+</html>

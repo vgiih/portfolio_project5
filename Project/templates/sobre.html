@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Projeto 5 - Sobre</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+<header>
+	<div class="container">
+		<div class="logo">
+			<img src="{{ url_for('static', filename='images/logo.jpg') }}">
+		</div>
+
+	<nav class="desktop">
+		<ul>
+			<li><a href="{{ url_for('home') }}">Home</a></li>
+			<li><a href="{{ url_for('venda') }}">Venda</a></li>
+			<li><a style="color: #EB2D2D;" href="{{ url_for('sobre') }}">Sobre</a></li>
+			<li><a class="contato" goto="contato" href="{{ url_for('home') }}">Contato</a></li>
+		</ul>		
+	</nav>
+
+	<nav class="mobile">
+		<ul>
+			<li><a href="{{ url_for('home') }}">Home</a></li>
+			<li><a href="{{ url_for('venda') }}">Venda</a></li>
+			<li><a style="color: #EB2D2D;" href="{{ url_for('sobre') }}">Sobre</a></li>
+			<li><a class="contato" goto="contato" href="{{ url_for('home') }}">Contato</a></li>
+		</ul>		
+	</nav>
+	<div class="clear"></div>
+	</div>
+</header>
+
+<section class="sobre">
+	<div class="line-titulo">
+		<div class="ln1"></div>
+		<h2>Sobre</h2>
+	</div>
+
+	<div class="container">
+		<div class="img-sobre"></div>
+		<div class="descricao">
+			<h2>Lorem Ipsum</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut sollicitudin est, sit amet gravida libero. Integer ligula dolor, placerat sed lacinia in, porta vitae tortor. Nunc bibendum quam pretium mi malesuada, ut scelerisque ligula laoreet. Aliquam et ultrices odio. Vestibulum feugiat nisi vitae lorem vulputate ultrices. Nulla dapibus maximus ultricies. Fusce at sapien ante. Fusce ut nisl at nisl dictum condimentum vel vel ante. Suspendisse lobortis, urna vel pulvinar porta, lectus justo gravida est, vel rhoncus enim nibh et ipsum. In quis luctus mauris. Phasellus elementum convallis erat quis tincidunt.</p>
+		</div>
+
+		<div class="descricao-autor">
+			<div class="img-small"></div>
+			<p>Nam porta pharetra ante, sit amet euismod orci. Integer ex massa, ornare vitae ultrices sit amet, placerat non nisl. Pellentesque purus urna, finibus ut auctor at, iaculis quis nisl. Proin finibus nisl eu nulla vehicula, eget imperdiet lacus imperdiet.</p>
+		</div>
+	</div>
+
+	<div class="clear"></div>
+</section>
+
+
+<footer>
+	<div class="container">
+		<nav>
+			<ul>
+				<li><a href="{{ url_for('home') }}">Home</a></li>
+				<li><a href="{{ url_for('venda') }}">Venda</a></li>
+				<li><a style="color: #EB2D2D;" href="{{ url_for('sobre') }}">Sobre</a></li>
+				<li><a class="contato" goto="contato" href="{{ url_for('home') }}">Contato</a></li>
+			</ul>
+		</nav>
+		<p>Todos os direitos reservados | 2022</p>
+	</div>
+	<div class="clear"></div>
+</footer>
+
+<script type="text/javascript" src="{{ url_for('static', filename='js/jquery.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='js/functions.js') }}"></script>
+</body>
+</html>

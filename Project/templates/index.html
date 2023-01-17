@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Projeto 5</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+<header>
+	<div class="container">
+		<div class="logo">
+			<img src="{{ url_for('static', filename='images/logo.jpg') }}">
+		</div>
+
+	<nav class="desktop">
+		<ul>
+			<li><a style="color: #EB2D2D;" href="{{ url_for('home') }}">Home</a></li>
+			<li><a href="{{ url_for('venda') }}">Venda</a></li>
+			<li><a href="{{ url_for('sobre') }}">Sobre</a></li>
+			<li><a class="contato" goto="contato" href="">Contato</a></li>
+		</ul>		
+	</nav>
+
+	<nav class="mobile">
+		<ul>
+			<li><a style="color: #EB2D2D;" href="{{ url_for('home') }}">Home</a></li>
+			<li><a href="{{ url_for('venda') }}">Venda</a></li>
+			<li><a href="{{ url_for('sobre') }}">Sobre</a></li>
+			<li><a class="contato" goto="contato" href="">Contato</a></li>
+		</ul>		
+	</nav>
+	<div class="clear"></div>
+	</div>
+</header>
+
+<section class="banner">
+	<div class="container">
+		<div class="txt-banner">
+			<div class="txt-banner-single">Consultoria</div>
+			<div class="txt-banner-single">Compra</div>
+			<div class="txt-banner-single">Venda</div>
+			<div class="txt-banner-single">email@hotmail.com</div>
+		</div>
+	</div>
+</section>
+
+<section class="veiculos-destaque">
+	<div class="line-titulo">
+		<div class="ln1"></div>
+		<h2>Veículos em destaque</h2>
+	</div>
+
+	<div class="container">
+		<div class="vitrine-destaque">
+			<div style="background-image: url('../static/images/carro1.jpg');" class="carro-img"></div>
+			<div class="info-carro">
+				<h2>Volkswagen Karmann-ghia</h2>
+				<p>1.6 8v, Gasolina, 2P, Manual 1969</p>
+				<a class="btn1" href="{{ url_for('carro') }}">Mais Detalhes</a>
+			</div>
+		</div>
+
+		<div class="vitrine-destaque">
+			<div style="background-image: url('../static/images/carro1.jpg');" class="carro-img"></div>
+			<div class="info-carro">
+				<h2>Volkswagen Karmann-ghia</h2>
+				<p>1.6 8v, Gasolina, 2P, Manual 1969</p>
+				<a class="btn1" href="{{ url_for('carro') }}">Mais Detalhes</a>
+			</div>
+		</div>
+
+		<div class="vitrine-destaque">
+			<div style="background-image: url('../static/images/carro1.jpg');" class="carro-img"></div>
+			<div class="info-carro">
+				<h2>Volkswagen Karmann-ghia</h2>
+				<p>1.6 8v, Gasolina, 2P, Manual 1969</p>
+				<a class="btn1" href="{{ url_for('carro') }}">Mais Detalhes</a>
+			</div>
+		</div>
+	</div>	
+
+	<div class="clear"></div>
+</section>
+
+<section class="servicos-descricao">
+	<div class="half1">
+		<div class="half1-wrapper">
+			<h2>Serviços</h2>
+			<ul>
+				<li>Compra</li>
+				<li>Venda</li>
+				<li>Consignação</li>
+				<li>Consultoria de Veículos</li>
+				<li>Indicação de mecânico e peças</li>
+			</ul>
+			<a goto="contato" class="btn1" href="">Saiba Mais</a>
+		</div>	
+	</div>
+
+	<div class="half2">
+		<h2>Depoimentos</h2>
+		<div class="depoimento-single">
+			<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vulputate felis ac mi iaculis condimentum. Suspendisse potenti. Duis bibendum justo vitae ligula sollicitudin mattis. Nullam eu turpis in arcu auctor luctus."</p>
+
+			<div class="navigation">
+				<div class="arrows">
+					<img src="{{ url_for('static', filename='images/arrow-left.png') }}">
+					<img src="{{ url_for('static', filename='images/arrow-right.png') }}">
+				</div>
+				<div class="nome-depoimento">Giovanna Vieira</div>
+			</div>
+
+		</div>
+	</div>
+
+</section>
+
+<section class="contato" id="contato">
+	<div class="line-titulo">
+		<div class="ln1"></div>
+		<h2>Entre em contato</h2>
+	</div>
+
+	<form>
+		<div class="input-wrapper w100">
+			<input type="text" name="nome" placeholder="Nome" required>
+		</div>
+
+		<div class="input-wrapper w50">
+			<input type="text" name="email" placeholder="E-mail" required>
+		</div>
+
+		<div class="input-wrapper w50">
+			<input type="text" name="telefone" placeholder="Telefone" required>
+		</div>
+
+		<div class="input-wrapper w100">
+			<textarea placeholder="Mensagem" required></textarea>
+		</div>
+
+		<div class="input-wrapper w100">
+			<input class="btn1" type="submit" name="submit" value="Enviar">
+		</div>
+		<div class="clear"></div>
+	</form>
+</section>
+
+<footer>
+	<div class="container">
+		<nav>
+			<ul>
+				<li><a style="color: #EB2D2D;" href="{{ url_for('home') }}">Home</a></li>
+				<li><a href="{{ url_for('venda') }}">Venda</a></li>
+				<li><a href="{{ url_for('sobre') }}">Sobre</a></li>
+				<li><a class="contato" goto="contato" href="">Contato</a></li>	
+			</ul>
+		</nav>
+		<p>Todos os direitos reservados | 2022</p>
+	</div>
+	<div class="clear"></div>
+</footer>
+
+<script type="text/javascript" src="{{ url_for('static', filename='js/jquery.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='js/functions.js') }}"></script>
+</body>
+</html>
